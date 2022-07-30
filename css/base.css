@@ -1,4 +1,13 @@
-.center {
+@font-face {
+  font-family: "PingFangSCRegular";
+  src: url("../fonts/PingFangSCRegular.ttf") format("truetype");
+}
+
+body {
+  font-family: "PingFangSCRegular";
+}
+
+.center-wrap {
   width: 1152px;
   margin: 0 auto;
 }
