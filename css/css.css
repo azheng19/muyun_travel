@@ -65,6 +65,21 @@
   transform: rotate(45deg);
 }
 
+.site-head .topbar .topbar-r {
+  float: right;
+  width: 225px;
+}
+
+.site-head .topbar .topbar-r a,
+.site-head .topbar .topbar-r span {
+  margin-right: 11px;
+  font-size: 15px;
+}
+
+.site-head .topbar .topbar-r a:last-child {
+  margin-right: 0;
+}
+
 .site-head .main-nav {
   height: 40px;
   background-color: #20bd9a;
@@ -138,4 +153,9 @@
   width: 32px;
   height: 30px;
   background-color: #20bd9a;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-style: 18px;
+  border-radius: 0 4px 4px 0;
 }
