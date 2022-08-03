@@ -1,8 +1,10 @@
 .site-head {
   height: 150px;
+  min-width: 1152px;
 }
 
 .site-head .topbar {
+  min-width: 1152px;
   height: 32px;
   background-color: #2a2a2a;
   color: white;
@@ -130,6 +132,7 @@
 }
 
 .site-head .main-nav {
+  min-width: 1152px;
   height: 40px;
   background-color: #20bd9a;
 }
@@ -252,4 +255,62 @@
   color: white;
   font-style: 18px;
   border-radius: 0 4px 4px 0;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  min-width: 1152px;
+  vertical-align: middle;
+}
+
+.banner .center-wrap {
+  position: absolute;
+  width: 1152px;
+  top: 0;
+  left: 50%;
+  margin-left: -576px;
+  height: 100%;
+}
+
+.banner .center-wrap .banner-nav {
+  height: 100%;
+}
+
+.banner .center-wrap .banner-nav ul {
+  height: 100%;
+}
+
+.banner .center-wrap .banner-nav ul li {
+  height: 16.66%;
+  width: 296px;
+  background-image: linear-gradient(to bottom, red, blue);
+}
+
+.banner .center-wrap .leftbtn {
+  position: absolute;
+  width: 28px;
+  height: 44px;
+  top: 50%;
+  left: -38px;
+  margin-top: -22px;
+  background: url(../images/icons.png) no-repeat -21px -94px;
+}
+
+.banner .center-wrap .rightbtn {
+  position: absolute;
+  width: 28px;
+  height: 44px;
+  top: 50%;
+  right: -38px;
+  margin-top: -22px;
+  background: url(../images/icons.png) no-repeat -21px -29px;
+}
+
+.banner .center-wrap .leftbtn:hover,
+.banner .center-wrap .rightbtn:hover {
+  opacity: 0.8;
 }
