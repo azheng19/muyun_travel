@@ -457,14 +457,17 @@
   margin-bottom: 32px;
 }
 
-.xxsw .hd h2 {
-  float: left;
+.content-part h2 {
   font-size: 36px;
   font-weight: bold;
   color: #1c1f21;
 }
 
-.xxsw .hd em {
+.xxsw .hd h2 {
+  float: left;
+}
+
+.content-part em {
   float: left;
   position: relative;
   top: 20px;
@@ -492,4 +495,86 @@
 
 .xxsw ul li:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.jjzyx {
+  height: 698px;
+  padding-top: 40px;
+}
+
+.jjzyx .hd h2 {
+  float: left;
+}
+
+.jjzyx .hd em {
+  float: left;
+}
+
+.jjzyx .hd nav {
+  float: right;
+  width: 500px;
+}
+
+.jjzyx .hd nav ul {
+  padding-top: 16px;
+}
+
+.jjzyx .hd nav ul li {
+  float: left;
+  margin-right: 16px;
+  font-size: 14px;
+}
+
+.jjzyx .hd nav ul li:last-child {
+  margin-right: 0;
+}
+
+.jjzyx .hd nav ul li a {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.jjzyx .hd nav ul li.cur {
+  border-bottom: 4px solid #20bd9a;
+  padding-bottom: 4px;
+}
+
+.jjzyx .hd nav ul li.cur a {
+  color: #20bd9a;
+}
+
+.jjzyx .bd {
+  padding-top: 32px;
+}
+
+.jjzyx .bd ul li {
+  float: left;
+  margin: 0 32px 32px 0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.jjzyx .bd ul li:nth-child(3),
+.jjzyx .bd ul li:nth-child(7) {
+  margin-right: 0;
+}
+
+.jjzyx .bd ul li.big-grid {
+  width: 560px;
+  height: 270px;
+}
+
+.jjzyx .bd ul li.pro-grid {
+  width: 264px;
+  height: 270px;
+}
+
+.jjzyx .bd ul li.pro-grid .wordbox {
+  padding: 14px;
+  font-size: 14px;
+  color: #1c1f21;
+  line-height: 26px;
+}
+
+.jjzyx .bd ul li.more-grid {
+  width: 264px;
+  height: 270px;
 }
