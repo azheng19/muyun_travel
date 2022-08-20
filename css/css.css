@@ -539,6 +539,27 @@
   color: #20bd9a;
 }
 
+.content-part img {
+  transition: transform 0.4s ease 0s;
+}
+
+.content-part img:hover {
+  transform: scale(1.1);
+}
+
+.content-part li {
+  overflow: hidden;
+}
+
+.content-part li .picbox {
+  height: 184px;
+  overflow: hidden;
+}
+
+.content-part .grid {
+  overflow: hidden;
+}
+
 .common-style .bd {
   padding-top: 32px;
 }
@@ -588,6 +609,7 @@
   left: 0;
   text-align: center;
   line-height: 40px;
+  z-index: 9999;
 }
 
 .common-style .bd > ul > li.pro-grid {
@@ -611,13 +633,28 @@
   line-height: 26px;
 }
 
+@keyframes ud {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
 .content-part .bd .more-grid {
   width: 264px;
   height: 270px;
   background-image: linear-gradient(180deg, #34e3bc 0%, #15af7a 98%);
+  /* box-sizing: border-box; */
+  position: relative;
+}
+
+.content-part .bd .more-grid a {
+  display: block;
+  height: 270px;
   padding-top: 46px;
   box-sizing: border-box;
-  position: relative;
 }
 
 .content-part .bd .more-grid p {
@@ -636,6 +673,10 @@
   left: 50%;
   top: 118px;
   margin-left: -24px;
+}
+
+.content-part .bd .more-grid:hover .iconfont {
+  animation: ud 0.4s ease 0s infinite alternate;
 }
 
 .content-part .bd .more-grid ul {
@@ -691,6 +732,7 @@
   height: 270px;
   position: relative;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .ddwl .bd .bigpicbox .info {
@@ -733,6 +775,7 @@
   float: left;
   width: 120px;
   height: 120px;
+  overflow: hidden;
 }
 
 .ddwl .bd .grid .wordbox {
@@ -845,4 +888,52 @@
 
 .gtbzzy .bd .more-grid ul {
   padding-left: 67px;
+}
+
+.big-grid.havehover .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.4s ease 0s;
+}
+
+.big-grid.havehover .mask:hover {
+  opacity: 1;
+}
+
+.big-grid.havehover .circle {
+  position: absolute;
+  top: -106px;
+  left: 50%;
+  margin-left: -53px;
+  width: 106px;
+  height: 106px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  box-sizing: border-box;
+  padding-top: 25px;
+  font-size: 18px;
+  text-align: center;
+  transition: top 0.5s ease 0s;
+}
+
+.big-grid.havehover:hover .circle {
+  top: 62px;
+}
+
+.big-grid.havehover .word {
+  position: absolute;
+  bottom: -100px;
+  left: 10px;
+  color: white;
+  transition: bottom 0.5s ease 0s;
+}
+
+.big-grid.havehover:hover .word {
+  bottom: 30px;
 }
