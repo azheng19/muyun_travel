@@ -258,9 +258,19 @@
   position: relative;
 }
 
-.banner img {
+.banner .carousel_list {
+  width: 600%;
+  overflow: hidden;
+  transition: transform 0.5s ease 0s;
+}
+
+.banner .carousel_list li {
+  float: left;
+  width: 16.666%;
+}
+
+.banner .carousel_list li img {
   width: 100%;
-  min-width: 1152px;
   vertical-align: middle;
 }
 
