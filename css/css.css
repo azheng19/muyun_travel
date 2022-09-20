@@ -310,7 +310,9 @@
 }
 
 .banner .center-wrap .banner-nav {
+  width: 652px;
   height: 100%;
+  position: relative;
 }
 
 .banner .center-wrap .banner-nav > ul {
@@ -405,6 +407,10 @@
   left: 12px;
 }
 
+.banner .center-wrap .banner-nav > ul > li.current {
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
 .banner .center-wrap .banner-nav .menus-box .menu {
   display: none;
   position: absolute;
@@ -419,7 +425,7 @@
 }
 
 .banner .center-wrap .banner-nav .menus-box .menu.current {
-  /* display: block; */
+  display: block;
 }
 
 .banner .center-wrap .banner-nav .menus-box .menu a {
